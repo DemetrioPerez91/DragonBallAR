@@ -14,6 +14,7 @@
 		CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */; };
 		CE4878B71F5C3DE80039CCC3 /* DragonBallARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */; };
 		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
+		CE4878C51F5C46970039CCC3 /* green grid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4878C41F5C46970039CCC3 /* green grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallARTests.swift; sourceTree = "<group>"; };
 		CE4878B81F5C3DE80039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE4878C41F5C46970039CCC3 /* green grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green grid.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				CE4878A31F5C3DE70039CCC3 /* ViewController.swift */,
 				CE4878A51F5C3DE80039CCC3 /* Main.storyboard */,
 				CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */,
+				CE4878C41F5C46970039CCC3 /* green grid.png */,
 				CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */,
 				CE4878AD1F5C3DE80039CCC3 /* Info.plist */,
 			);
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4878C51F5C46970039CCC3 /* green grid.png in Resources */,
 				CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */,
 				CE4878A91F5C3DE80039CCC3 /* Assets.xcassets in Resources */,
 				CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */,
