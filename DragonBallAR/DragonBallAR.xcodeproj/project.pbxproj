@@ -13,6 +13,7 @@
 		CE4878A91F5C3DE80039CCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */; };
 		CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */; };
 		CE4878B71F5C3DE80039CCC3 /* DragonBallARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */; };
+		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CE4878B21F5C3DE80039CCC3 /* DragonBallARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallARTests.swift; sourceTree = "<group>"; };
 		CE4878B81F5C3DE80039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 				CE4878A01F5C3DE70039CCC3 /* DragonBallAR */,
 				CE4878B51F5C3DE80039CCC3 /* DragonBallARTests */,
 				CE48789F1F5C3DE70039CCC3 /* Products */,
+				CE4878C11F5C44860039CCC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +98,14 @@
 				CE4878B81F5C3DE80039CCC3 /* Info.plist */,
 			);
 			path = DragonBallARTests;
+			sourceTree = "<group>";
+		};
+		CE4878C11F5C44860039CCC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4878C21F5C44860039CCC3 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +160,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 2UR7A92HF8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CE4878B11F5C3DE80039CCC3 = {
 						CreatedOnToolsVersion = 8.2;
@@ -412,6 +429,7 @@
 				CE4878BD1F5C3DE80039CCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4878BE1F5C3DE80039CCC3 /* Build configuration list for PBXNativeTarget "DragonBallARTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				CE4878C01F5C3DE80039CCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
