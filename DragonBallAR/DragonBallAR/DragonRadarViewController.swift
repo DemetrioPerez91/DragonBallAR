@@ -8,14 +8,49 @@
 
 import UIKit
 import MapKit
+import CoreLocation
+
 class DragonRadarViewController: UIViewController {
 
+    
+    @IBOutlet weak var radar: MKMapView!
+    let manager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
     }
     
-    @IBOutlet weak var radar: MKMapView!
+   
     
+    
+    
+}
 
+
+extension DragonRadarViewController:MKMapViewDelegate
+{
+    func setup()
+    {
+       request()
+        manager.delegate = self
+        radar.delegate = self
+    }
+    
+    func request()
+    {
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            manager.requestWhenInUseAuthorization()
+        }
+    }
+    
+    
+}
+
+extension DragonRadarViewController:CLLocationManagerDelegate
+{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+    }
 }
