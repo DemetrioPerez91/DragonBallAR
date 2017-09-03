@@ -15,6 +15,7 @@
 		CE4878B71F5C3DE80039CCC3 /* DragonBallARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */; };
 		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
 		CE4878C51F5C46970039CCC3 /* green grid.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4878C41F5C46970039CCC3 /* green grid.png */; };
+		CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CE4878B81F5C3DE80039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE4878C41F5C46970039CCC3 /* green grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green grid.png"; sourceTree = "<group>"; };
+		CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonRadarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */,
 				CE4878A31F5C3DE70039CCC3 /* ViewController.swift */,
+				CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */,
 				CE4878A51F5C3DE80039CCC3 /* Main.storyboard */,
 				CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */,
 				CE4878C41F5C46970039CCC3 /* green grid.png */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4878A41F5C3DE70039CCC3 /* ViewController.swift in Sources */,
+				CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */,
 				CE4878A21F5C3DE70039CCC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
