@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE283A561F5D826500922B2E /* GridOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283A551F5D826500922B2E /* GridOverlay.swift */; };
+		CE283A581F5D827300922B2E /* GridOverlayRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283A571F5D827300922B2E /* GridOverlayRenderer.swift */; };
 		CE4878A21F5C3DE70039CCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */; };
 		CE4878A41F5C3DE70039CCC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878A31F5C3DE70039CCC3 /* ViewController.swift */; };
 		CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4878A51F5C3DE80039CCC3 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE283A551F5D826500922B2E /* GridOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridOverlay.swift; sourceTree = "<group>"; };
+		CE283A571F5D827300922B2E /* GridOverlayRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridOverlayRenderer.swift; sourceTree = "<group>"; };
 		CE48789E1F5C3DE70039CCC3 /* DragonBallAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4878A31F5C3DE70039CCC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CE4878A31F5C3DE70039CCC3 /* ViewController.swift */,
-				CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */,
+				CE283A541F5D824600922B2E /* DragonRadar */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -77,6 +81,24 @@
 			children = (
 			);
 			name = Singletons;
+			sourceTree = "<group>";
+		};
+		CE283A531F5D822D00922B2E /* MapkitClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE283A551F5D826500922B2E /* GridOverlay.swift */,
+				CE283A571F5D827300922B2E /* GridOverlayRenderer.swift */,
+			);
+			name = MapkitClasses;
+			sourceTree = "<group>";
+		};
+		CE283A541F5D824600922B2E /* DragonRadar */ = {
+			isa = PBXGroup;
+			children = (
+				CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */,
+				CE283A531F5D822D00922B2E /* MapkitClasses */,
+			);
+			name = DragonRadar;
 			sourceTree = "<group>";
 		};
 		CE4878951F5C3DE70039CCC3 = {
@@ -241,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE283A561F5D826500922B2E /* GridOverlay.swift in Sources */,
 				CE4878A41F5C3DE70039CCC3 /* ViewController.swift in Sources */,
 				CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */,
+				CE283A581F5D827300922B2E /* GridOverlayRenderer.swift in Sources */,
 				CE4878A21F5C3DE70039CCC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

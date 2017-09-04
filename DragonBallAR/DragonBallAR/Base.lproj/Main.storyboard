@@ -49,19 +49,12 @@
                                             <constraint firstAttribute="height" constant="400" id="GQ0-D2-QNF"/>
                                         </constraints>
                                     </mapView>
-                                    <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green grid" translatesAutoresizingMaskIntoConstraints="NO" id="T5k-4h-RW2">
-                                        <rect key="frame" x="-0.5" y="-0.5" width="375" height="400"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.95217650598048098" blue="0.49077477655263124" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="T5k-4h-RW2" firstAttribute="height" secondItem="6dL-YM-eD2" secondAttribute="height" id="5fK-yj-jOB"/>
-                                    <constraint firstItem="T5k-4h-RW2" firstAttribute="width" secondItem="6dL-YM-eD2" secondAttribute="width" id="Ff3-Gt-U6f"/>
-                                    <constraint firstItem="T5k-4h-RW2" firstAttribute="centerX" secondItem="6dL-YM-eD2" secondAttribute="centerX" id="VjS-Mm-xTO"/>
                                     <constraint firstItem="6dL-YM-eD2" firstAttribute="centerY" secondItem="jNy-fG-EjA" secondAttribute="centerY" id="kDn-cH-RLo"/>
                                     <constraint firstItem="6dL-YM-eD2" firstAttribute="width" secondItem="jNy-fG-EjA" secondAttribute="width" id="qVY-xq-qIq"/>
                                     <constraint firstItem="6dL-YM-eD2" firstAttribute="centerX" secondItem="jNy-fG-EjA" secondAttribute="centerX" id="rZd-UN-oYC"/>
-                                    <constraint firstItem="T5k-4h-RW2" firstAttribute="centerY" secondItem="6dL-YM-eD2" secondAttribute="centerY" id="v5u-o2-eJt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -82,7 +75,4 @@
             <point key="canvasLocation" x="684" y="36.431784107946029"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="green grid" width="1920" height="1080"/>
-    </resources>
 </document>
