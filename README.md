@@ -18,3 +18,7 @@ A treasure hunting game in hich characters use a radarlike map to search for dra
 -The dragonballs are limited by de location to prevent users from aquiring more than one set
 
 -Dragonballs reset every week
+
+## Current Issue
+
+I am trying to figure out how to add the green gridto the map. I tried using an image vew at first but then learned that it probably wasa better to use an Overlay, which is fairly difficult.
