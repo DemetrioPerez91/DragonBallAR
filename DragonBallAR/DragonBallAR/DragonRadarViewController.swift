@@ -62,21 +62,6 @@ extension DragonRadarViewController:MKMapViewDelegate
       
     }
     
-    // implement delegate function for adding the overlay view to the map
-    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-      
-            let renderer  = GridOverlayRenderer(overlay: overlay)
-            return renderer
-    }
-   
-    func mapView(_ mapView: MKMapView, didAdd renderers: [MKOverlayRenderer]) {
-        let renderer = renderers[0] as! GridOverlayRenderer
-        let origin = renderer.overlay.boundingMapRect.origin
-        let size = renderer.overlay.boundingMapRect.size
-        let coordinate = renderer.overlay.coordinate
-        print("Renderer data:\n\t origin:\(origin)\n\t size\(size)\n\t coordinate \(coordinate)")
-        print("RENDERER ADDED");
-    }
 }
 
 extension DragonRadarViewController:CLLocationManagerDelegate
