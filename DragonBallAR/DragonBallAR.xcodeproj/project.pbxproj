@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE283A9C1F603AF400922B2E /* RadarTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE283A9B1F603AF400922B2E /* RadarTile.swift */; };
+		CE283A9E1F604A8900922B2E /* green grid tileable.png in Resources */ = {isa = PBXBuildFile; fileRef = CE283A9D1F604A8900922B2E /* green grid tileable.png */; };
 		CE4878A21F5C3DE70039CCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */; };
 		CE4878A41F5C3DE70039CCC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878A31F5C3DE70039CCC3 /* ViewController.swift */; };
 		CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4878A51F5C3DE80039CCC3 /* Main.storyboard */; };
 		CE4878A91F5C3DE80039CCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */; };
 		CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */; };
 		CE4878B71F5C3DE80039CCC3 /* DragonBallARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */; };
+		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
+		CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE283A9B1F603AF400922B2E /* RadarTile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarTile.swift; sourceTree = "<group>"; };
+		CE283A9D1F604A8900922B2E /* green grid tileable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green grid tileable.png"; sourceTree = "<group>"; };
 		CE48789E1F5C3DE70039CCC3 /* DragonBallAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4878A31F5C3DE70039CCC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		CE4878B21F5C3DE80039CCC3 /* DragonBallARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallARTests.swift; sourceTree = "<group>"; };
 		CE4878B81F5C3DE80039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonRadarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE283A511F5C582500922B2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4878A31F5C3DE70039CCC3 /* ViewController.swift */,
+				CE283A541F5D824600922B2E /* DragonRadar */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE283A521F5C582B00922B2E /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		CE283A531F5D822D00922B2E /* MapkitClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE283A9B1F603AF400922B2E /* RadarTile.swift */,
+			);
+			name = MapkitClasses;
+			sourceTree = "<group>";
+		};
+		CE283A541F5D824600922B2E /* DragonRadar */ = {
+			isa = PBXGroup;
+			children = (
+				CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */,
+				CE283A531F5D822D00922B2E /* MapkitClasses */,
+			);
+			name = DragonRadar;
+			sourceTree = "<group>";
+		};
 		CE4878951F5C3DE70039CCC3 = {
 			isa = PBXGroup;
 			children = (
 				CE4878A01F5C3DE70039CCC3 /* DragonBallAR */,
 				CE4878B51F5C3DE80039CCC3 /* DragonBallARTests */,
 				CE48789F1F5C3DE70039CCC3 /* Products */,
+				CE4878C11F5C44860039CCC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				CE4878A11F5C3DE70039CCC3 /* AppDelegate.swift */,
-				CE4878A31F5C3DE70039CCC3 /* ViewController.swift */,
+				CE283A511F5C582500922B2E /* Views */,
+				CE283A521F5C582B00922B2E /* Singletons */,
 				CE4878A51F5C3DE80039CCC3 /* Main.storyboard */,
 				CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */,
+				CE283A9D1F604A8900922B2E /* green grid tileable.png */,
 				CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */,
 				CE4878AD1F5C3DE80039CCC3 /* Info.plist */,
 			);
@@ -94,6 +139,14 @@
 				CE4878B81F5C3DE80039CCC3 /* Info.plist */,
 			);
 			path = DragonBallARTests;
+			sourceTree = "<group>";
+		};
+		CE4878C11F5C44860039CCC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE4878C21F5C44860039CCC3 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +201,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 2UR7A92HF8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CE4878B11F5C3DE80039CCC3 = {
 						CreatedOnToolsVersion = 8.2;
@@ -184,6 +242,7 @@
 				CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */,
 				CE4878A91F5C3DE80039CCC3 /* Assets.xcassets in Resources */,
 				CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */,
+				CE283A9E1F604A8900922B2E /* green grid tileable.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +261,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4878A41F5C3DE70039CCC3 /* ViewController.swift in Sources */,
+				CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */,
+				CE283A9C1F603AF400922B2E /* RadarTile.swift in Sources */,
 				CE4878A21F5C3DE70039CCC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +473,7 @@
 				CE4878BD1F5C3DE80039CCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE4878BE1F5C3DE80039CCC3 /* Build configuration list for PBXNativeTarget "DragonBallARTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				CE4878C01F5C3DE80039CCC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
