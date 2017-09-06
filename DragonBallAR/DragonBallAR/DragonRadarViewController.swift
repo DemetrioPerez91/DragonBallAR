@@ -16,24 +16,13 @@ class DragonRadarViewController: UIViewController {
     
     @IBOutlet weak var radar: MKMapView!
     let manager = CLLocationManager()
+    var tileRenderer:MKTileOverlayRenderer?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
-    
-   
-    func addOverlay()
-    {
-        if let uLoc = currentUserLocation
-        {
-         
-            
-        }
-    }
-    
-    
     
 }
 
@@ -42,11 +31,22 @@ extension DragonRadarViewController:MKMapViewDelegate
 {
     func setup()
     {
-       request()
+        request()
+        setupTileRenderer()
         manager.delegate = self
         
         radar.delegate = self
         radar.showsUserLocation = true
+        
+        
+    }
+    
+    
+    func setupTileRenderer()
+    {
+        let overlay = RadarTile()
+        radar.add(overlay)
+        tileRenderer = MKTileOverlayRenderer(overlay: overlay)
         
     }
     
@@ -62,6 +62,9 @@ extension DragonRadarViewController:MKMapViewDelegate
       
     }
     
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        return tileRenderer!
+    }
 }
 
 extension DragonRadarViewController:CLLocationManagerDelegate
@@ -69,7 +72,7 @@ extension DragonRadarViewController:CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let userLocation = locations.last else{return}
         currentUserLocation = userLocation.coordinate
-        /*let timeSinceNow = userLocation.timestamp.timeIntervalSinceNow
+        let timeSinceNow = userLocation.timestamp.timeIntervalSinceNow
         if(abs(timeSinceNow)<15)
         {
             
@@ -82,8 +85,8 @@ extension DragonRadarViewController:CLLocationManagerDelegate
             
             
             
-        }*/
-        //addOverlay()
+        }
+        
         
     }
     
