@@ -22,8 +22,17 @@ class DragonRadarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+     
     }
     
+    
+    
+    func addAnnotation()
+    {
+        let coordinate = CLLocationCoordinate2D(latitude: 33.931416,  longitude: -84.464599)
+        let db = DragonBallAnnotation(coordinate, title: "lol", subtitle: "lol")
+        radar.addAnnotation(db)
+    }
 }
 
 
@@ -37,7 +46,7 @@ extension DragonRadarViewController:MKMapViewDelegate
         
         radar.delegate = self
         radar.showsUserLocation = true
-        
+        addAnnotation()
         
     }
     
@@ -73,12 +82,15 @@ extension DragonRadarViewController:MKMapViewDelegate
             if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
                 as? MKPinAnnotationView { // 2
                 dequeuedView.annotation = annotation
+                
                 view = dequeuedView
+                view.image = #imageLiteral(resourceName: "dragonballSrpite.png")
             } else {
                 // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
+                view.image = #imageLiteral(resourceName: "dragonballSrpite.png")
           
             }
             return view
@@ -95,6 +107,7 @@ extension DragonRadarViewController:CLLocationManagerDelegate
         let timeSinceNow = userLocation.timestamp.timeIntervalSinceNow
         if(abs(timeSinceNow)<15)
         {
+            
             
             var newRegion = radar.region
             newRegion.center = userLocation.coordinate
