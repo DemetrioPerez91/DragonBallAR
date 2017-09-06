@@ -12,7 +12,7 @@ class RadarTile:  MKTileOverlay
 {
     override func url(forTilePath path: MKTileOverlayPath) -> URL {
         let resourcePath = Bundle.main.resourcePath
-        let imgName = "green grid.png"
+        let imgName = "green grid tileable.png"
         let path = resourcePath! + "/" + imgName
         return URL(fileURLWithPath: path)
     }
