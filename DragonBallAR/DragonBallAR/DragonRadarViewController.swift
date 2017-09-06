@@ -78,21 +78,20 @@ extension DragonRadarViewController:MKMapViewDelegate
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if let annotation = annotation as? DragonBallAnnotation {
             let identifier = "pin"
-            var view: MKPinAnnotationView
-            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-                as? MKPinAnnotationView { // 2
-                dequeuedView.annotation = annotation
-                
-                view = dequeuedView
-                view.image = #imageLiteral(resourceName: "dragonballSrpite.png")
-            } else {
-                // 3
-                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                view.canShowCallout = true
-                view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.image = #imageLiteral(resourceName: "dragonballSrpite.png")
-          
+            var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            if view == nil
+            {
+                view = MKAnnotationView(annotation: annotation , reuseIdentifier: identifier)
             }
+                // 3
+            view?.annotation = annotation
+            view?.isEnabled = true
+            
+            view?.canShowCallout = true
+            view?.image = #imageLiteral(resourceName: "dragonballSrpite.png")
+          
+            
+            
             return view
         }
         return nil
