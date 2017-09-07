@@ -41,7 +41,7 @@ extension DragonRadarViewController:MKMapViewDelegate
     func setup()
     {
         request()
-        setupTileRenderer()
+        //setupTileRenderer()
         manager.delegate = self
         
         radar.delegate = self
