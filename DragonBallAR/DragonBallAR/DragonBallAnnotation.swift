@@ -18,6 +18,7 @@ class DragonBallAnnotation: NSObject,MKAnnotation {
         self.coordinate = coordinate
         self.title = title
         self.subtitle = subtitle
+        
     }
     
     

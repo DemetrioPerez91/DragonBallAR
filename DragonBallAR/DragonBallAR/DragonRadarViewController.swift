@@ -67,7 +67,7 @@ extension DragonRadarViewController:MKMapViewDelegate
     func setup()
     {
         request()
-        //setupTileRenderer()
+        setupTileRenderer()
         manager.delegate = self
         radar.delegate = self
         radar.showsUserLocation = true
@@ -111,14 +111,53 @@ extension DragonRadarViewController:MKMapViewDelegate
             
             view?.canShowCallout = true
             view?.image = #imageLiteral(resourceName: "dragonballSrpite.png")
+            view?.setBlink()
             return view
+        }
+        else if annotation.isKind(of: MKUserLocation.self)
+        {
+            let identifier = "user"
+            var view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            if view == nil
+            {
+                view = MKAnnotationView(annotation: annotation , reuseIdentifier: identifier)
+            }
+            // 3
+            view?.annotation = annotation
+            view?.isEnabled = true
+            
+            view?.canShowCallout = true
+            view?.image = #imageLiteral(resourceName: "triangleCrop")
+            
+            return view
+
         }
         return nil
     }
-    
-    
-    
-
+}
+//Add blinking animation to annotation
+extension MKAnnotationView
+{
+    func setBlink()
+    {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block:
+            {_ in
+                DispatchQueue.main.async {
+                    UIView.animate(withDuration: 1, animations:
+                        {
+                            
+                            if self.alpha == 0.0
+                            {
+                                self.alpha = 1.0
+                            }
+                            else{
+                                self.alpha = 0.0
+                            }
+                    })
+                }
+               
+        })
+    }
 }
 
 extension DragonRadarViewController:CLLocationManagerDelegate

@@ -20,6 +20,7 @@
 		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
 		CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */; };
 		CED2F94E1F61960700244AF5 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED2F94D1F61960700244AF5 /* default.gpx */; };
+		CED2F9541F61DBF300244AF5 /* triangleCrop.png in Resources */ = {isa = PBXBuildFile; fileRef = CED2F9531F61DBF300244AF5 /* triangleCrop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonRadarViewController.swift; sourceTree = "<group>"; };
 		CED2F94D1F61960700244AF5 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
+		CED2F9531F61DBF300244AF5 /* triangleCrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangleCrop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				CE4878A81F5C3DE80039CCC3 /* Assets.xcassets */,
 				CE283A9D1F604A8900922B2E /* green grid tileable.png */,
 				CE283AA11F60612200922B2E /* dragonballSrpite.png */,
+				CED2F9531F61DBF300244AF5 /* triangleCrop.png */,
 				CE4878AA1F5C3DE80039CCC3 /* LaunchScreen.storyboard */,
 				CE4878AD1F5C3DE80039CCC3 /* Info.plist */,
 			);
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4878AC1F5C3DE80039CCC3 /* LaunchScreen.storyboard in Resources */,
+				CED2F9541F61DBF300244AF5 /* triangleCrop.png in Resources */,
 				CE4878A91F5C3DE80039CCC3 /* Assets.xcassets in Resources */,
 				CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */,
 				CE283A9E1F604A8900922B2E /* green grid tileable.png in Resources */,
