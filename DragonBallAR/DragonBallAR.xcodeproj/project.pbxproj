@@ -19,6 +19,7 @@
 		CE4878B71F5C3DE80039CCC3 /* DragonBallARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878B61F5C3DE80039CCC3 /* DragonBallARTests.swift */; };
 		CE4878C31F5C44860039CCC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4878C21F5C44860039CCC3 /* MapKit.framework */; };
 		CE4878C71F5C4E500039CCC3 /* DragonRadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */; };
+		CED2F94E1F61960700244AF5 /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED2F94D1F61960700244AF5 /* default.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CE4878B81F5C3DE80039CCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4878C21F5C44860039CCC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CE4878C61F5C4E500039CCC3 /* DragonRadarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonRadarViewController.swift; sourceTree = "<group>"; };
+		CED2F94D1F61960700244AF5 /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		CE4878951F5C3DE70039CCC3 = {
 			isa = PBXGroup;
 			children = (
+				CED2F94D1F61960700244AF5 /* default.gpx */,
 				CE4878A01F5C3DE70039CCC3 /* DragonBallAR */,
 				CE4878B51F5C3DE80039CCC3 /* DragonBallARTests */,
 				CE48789F1F5C3DE70039CCC3 /* Products */,
@@ -250,6 +253,7 @@
 				CE4878A71F5C3DE80039CCC3 /* Main.storyboard in Resources */,
 				CE283A9E1F604A8900922B2E /* green grid tileable.png in Resources */,
 				CE283AA21F60612200922B2E /* dragonballSrpite.png in Resources */,
+				CED2F94E1F61960700244AF5 /* default.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
