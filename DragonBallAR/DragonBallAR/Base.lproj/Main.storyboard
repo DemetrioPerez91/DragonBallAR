@@ -57,6 +57,13 @@
                                     <constraint firstItem="6dL-YM-eD2" firstAttribute="centerX" secondItem="jNy-fG-EjA" secondAttribute="centerX" id="rZd-UN-oYC"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb5-Hg-76V">
+                                <rect key="frame" x="165" y="441" width="45" height="30"/>
+                                <state key="normal" title="ZOOM"/>
+                                <connections>
+                                    <action selector="zoom:" destination="jFL-hF-U46" eventType="touchUpInside" id="vgw-PC-U4A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -64,6 +71,8 @@
                             <constraint firstItem="jNy-fG-EjA" firstAttribute="height" secondItem="qjc-1B-xzW" secondAttribute="height" multiplier="0.6" id="QWb-CA-FI2"/>
                             <constraint firstItem="jNy-fG-EjA" firstAttribute="centerY" secondItem="qjc-1B-xzW" secondAttribute="centerY" multiplier="0.7" id="SBE-w5-zPs"/>
                             <constraint firstItem="jNy-fG-EjA" firstAttribute="centerX" secondItem="qjc-1B-xzW" secondAttribute="centerX" id="StK-SR-65s"/>
+                            <constraint firstItem="sb5-Hg-76V" firstAttribute="centerX" secondItem="jNy-fG-EjA" secondAttribute="centerX" id="jsR-FL-VeJ"/>
+                            <constraint firstItem="sb5-Hg-76V" firstAttribute="top" secondItem="6dL-YM-eD2" secondAttribute="bottom" constant="7.5" id="ymX-mK-Igc"/>
                         </constraints>
                     </view>
                     <connections>
